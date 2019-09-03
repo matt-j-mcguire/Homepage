@@ -1,0 +1,83 @@
+<html>
+  <head>
+    <title>serious work</title>
+    <meta charset="utf-8" />
+    <script src="Tetris.js"></script>
+    <link href="Tetris.css" rel="stylesheet" />
+  </head>
+  <body>
+    <img src="source/back1.png" id="backpng0" hidden />
+    <img src="source/back2.png" id="backpng1" hidden />
+    <img src="source/back3.png" id="backpng2" hidden />
+    <img src="source/back4.png" id="backpng3" hidden />
+    <img src="source/back5.png" id="backpng4" hidden />
+    <img src="source/buttons.png" id="allbuttons" hidden />
+    <img src="source/audio.png" id="audiobtn" hidden />
+    <!--the iframe is to trick the page into playing music-->
+    <iframe allow="autoplay" id="audio" hidden></iframe>
+    <audio id="msc" loop src="source/song.mp3"></audio>
+    <div class="fillall">
+      <div
+        class="centerit quickshaddow"
+        style="background-color: rgb(58, 58, 58)"
+      >
+        <div class="ddiv">
+          <canvas id="mycanvas"></canvas>
+        </div>
+        <div class="ddiv" style="padding-left:25px;">
+          <span>Up Next</span>
+          <br />
+          <canvas id="upcomming"></canvas>
+          <br />
+          <span id="score">score</span>
+          <br />
+          <canvas
+            id="buttons"
+            width="80"
+            height="260"
+            style="border: 0"
+          ></canvas>
+        </div>
+        <script>
+          setupPanel("mycanvas", "upcomming");
+        </script>
+      </div>
+    </div>
+    <div class="center-content">
+      <p>
+        This is really a simple game to build, and was my first real jump into
+        Javascript to try to get to learn the language and HTML Canvas at the
+        same time. this early version is still pretty crude, but it shows off
+        using bit operation to generate all the shapes so they can be stored as
+        simple integers.
+      </p>
+      <pre style=" background-color:rgb(58, 58, 58);">
+            <code style="font-size: small;">
+            const LAYOUTS = [
+                [51],                   //square
+                [240, 8738],            //line
+                [99, 306],              //s-left
+                [54, 561],              //s-right
+                [116, 1570, 368, 547],  //L
+                [1604, 1136, 550, 1808],//backwards L
+                [114, 610, 624, 562]    //T
+            ];
+        </code>
+      </pre>
+      <p>
+        You can try out the number generator here and draw your own shapes:
+        <div width="400" class="ddiv" style="left:400"> 
+            <canvas id="myquad"></canvas><br/>
+           
+            <input style="width:50px" type="text" id="lblval" value="0"></input> 
+            <button onclick="setvalue()">set</button>   
+             <button onclick="clearquad()">clear</button>
+            <script>
+                setupQuad('myquad');
+            </script>
+        </div>
+        Every tile has a bit equivelent
+      </p>
+    </div>
+  </body>
+</html>

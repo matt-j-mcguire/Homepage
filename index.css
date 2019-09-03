@@ -1,8 +1,22 @@
 body {
-  background-color: rgb(71, 81, 92);
+  background-color: rgb(73, 73, 73);
   color: white;
   font-family: Arial, sans-serif;
   line-height: 1.5;
+}
+
+.titlebar{
+  background-image: url('source/splash.jpg'); 
+  background-repeat: no-repeat; 
+  background-size: cover ;
+  height: 96px;
+  width: 100%;
+  display:inline-block;
+  border: 1px solid rgb(88, 88, 88);
+}
+
+.titletext{
+  padding-left: 32px;
 }
 
 .titlename {
@@ -19,13 +33,13 @@ body {
 }
 
 a:link {
-  color: rgb(227, 255, 227);
+  color: rgb(169, 186, 212);
   background-color: transparent;
   text-decoration: none;
 }
 
 a:visited {
-  color: rgb(227, 255, 227);
+  color: rgb(169, 186, 212);
   background-color: transparent;
   text-decoration: none;
 }
@@ -42,7 +56,7 @@ a:active {
   text-decoration: underline;
 }
 
-
+/*#region  links in drop menu*/
 
 .xa:link {
   color: rgb(0, 0, 0);
@@ -68,8 +82,7 @@ a:active {
   text-decoration: none;
 }
 
-
-
+/*#endregion*/
 
 
 .aligncenters {
@@ -83,16 +96,22 @@ a:active {
   margin-right: auto;
   margin-top: 32px;
   margin-bottom: 32px;
-  width: 800px;
+  max-width: 800px;
   padding: 32px;
-  border: 1px solid rgb(95, 109, 122);
+  border: 1px solid rgb(88, 88, 88);
 }
 
+/*#region  menu bar*/
+
 .menu-bar{
-  background-color: rgb(95, 109, 122);
+  background-color:rgb(73, 73, 73);
   height: 34px;
-  width:100%;
-  border: 1px solid  rgb(51, 59, 66);
+  width:34px;
+  border: 1px solid  rgb(88, 88, 88);
+  position: absolute;
+  left: 15px;
+  top:80px;
+  display: fixed;
 }
 
 .menudropbtn {
@@ -121,15 +140,14 @@ a:active {
 }
 
 .dc-left {
-  left: 75px;
+  left: 0px;
 }
 
 .menudropdown-content {
   display: none;
   position: absolute;
-  /* margin-top: 5px; */
   background-color: #f9f9f9;
-  min-width: 200px;
+  min-width: 300px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 10;
 }
@@ -148,3 +166,5 @@ a:active {
 .menudropdown:hover .menudropdown-content {
   display: block;
 }
+
+/*#endregion*/

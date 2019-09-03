@@ -1,0 +1,47 @@
+body {
+    background-color: rgb(73, 73, 73);
+    color: white;
+    font-family: monospace;
+    font-size: 18px;
+
+}
+
+canvas {
+    border: 1px solid gray;
+}
+
+.ddiv {
+    display: table-cell;
+    vertical-align: top;
+}
+
+img {
+    position: relative;
+    width: 32px;
+    height: 32px;
+}
+
+.quickshaddow {
+    box-shadow: 10px 10px 10px black;
+  }
+
+.centerit{
+    display: inline-block;
+    padding: 10px;
+    border:1px solid rgb(161, 161, 161);
+}
+
+.fillall{
+    text-align: center;
+}
+
+.center-content {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    max-width: 800px;
+    padding: 32px;
+    border: 1px solid rgb(88, 88, 88);
+  }
