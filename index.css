@@ -1,0 +1,150 @@
+body {
+  background-color: rgb(71, 81, 92);
+  color: white;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.titlename {
+  font-family: Arial, sans-serif;
+  line-height: 0;
+  font-size: 3rem;
+  padding: 0;
+
+}
+
+.container-big {
+  margin-left: 64px;
+  margin-right: 64px;
+}
+
+a:link {
+  color: rgb(227, 255, 227);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(227, 255, 227);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(175, 198, 218);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+
+.xa:link {
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.xa:visited {
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.xa:hover {
+  color: rgb(22, 65, 102);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.xa:active {
+  color: rgb(92, 65, 190);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+
+
+
+
+.aligncenters {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.center-content {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  width: 800px;
+  padding: 32px;
+  border: 1px solid rgb(95, 109, 122);
+}
+
+.menu-bar{
+  background-color: rgb(95, 109, 122);
+  height: 34px;
+  width:100%;
+  border: 1px solid  rgb(51, 59, 66);
+}
+
+.menudropbtn {
+  padding: 0px;
+  cursor: pointer;
+}
+
+.menuleft {
+  float: left;
+}
+
+.menudropdown {
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid transparent;
+  /* padding: 5px 10px 5px 10px; */
+}
+
+.menudropdown:hover {
+  border: 1px solid dimgray;
+}
+
+
+.imagepadright{
+  padding-right: 5px;
+}
+
+.dc-left {
+  left: 75px;
+}
+
+.menudropdown-content {
+  display: none;
+  position: absolute;
+  /* margin-top: 5px; */
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+  .menudropdown-content label {
+      color: black;
+      padding: 7px 25px 7px 15px;
+      text-decoration: none;
+      display: block;
+  }
+
+      .menudropdown-content label:hover {
+          background-color: #c1c1c1;
+      }
+
+.menudropdown:hover .menudropdown-content {
+  display: block;
+}
