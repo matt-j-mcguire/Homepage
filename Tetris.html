@@ -76,7 +76,16 @@
                 setupQuad('myquad');
             </script>
         </div>
-        Every tile has a bit equivelent
+        Every tile has a bit equivelent, starting with top row with bits: 0 to 3 and the 
+        second row 4 to 7, third 8 to 11, and finally the forth row 12 to 15. when the bit is 
+        turned on that value is 'or'ed with any other squares to get a final value.
+      </p>
+      <p>
+          The game is broken up into 10 squares wide by 20 squares high; each square at 10 pixels 
+          in height and width. when the timer advances a tick; the game will take the current
+          shape of 4 tiles and advance one down while checking for collisions. if there is a collision 
+          it stops the shape, copies the 'on' tiles to the back buffer and then checks for completed
+          row
       </p>
     </div>
   </body>

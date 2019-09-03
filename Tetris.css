@@ -1,8 +1,8 @@
 body {
     background-color: rgb(73, 73, 73);
     color: white;
-    font-family: monospace;
-    font-size: 18px;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
 
 }
 
@@ -32,6 +32,8 @@ img {
 }
 
 .fillall{
+    font-family: monospace;
+    font-size: 18px;
     text-align: center;
 }
 
