@@ -1,11 +1,13 @@
 <html>
-  <head>
+
+<head>
     <title>serious work</title>
     <meta charset="utf-8" />
     <script src="Tetris.js"></script>
     <link href="Tetris.css" rel="stylesheet" />
-  </head>
-  <body>
+</head>
+
+<body>
     <img src="source/back1.png" id="backpng0" hidden />
     <img src="source/back2.png" id="backpng1" hidden />
     <img src="source/back3.png" id="backpng2" hidden />
@@ -17,42 +19,34 @@
     <iframe allow="autoplay" id="audio" hidden></iframe>
     <audio id="msc" loop src="source/song.mp3"></audio>
     <div class="fillall">
-      <div
-        class="centerit quickshaddow"
-        style="background-color: rgb(58, 58, 58)"
-      >
-        <div class="ddiv">
-          <canvas id="mycanvas"></canvas>
+        <div class="centerit quickshaddow" style="background-color: rgb(58, 58, 58)">
+            <div class="ddiv">
+                <canvas id="mycanvas"></canvas>
+            </div>
+            <div class="ddiv" style="padding-left:25px;">
+                <span>Up Next</span>
+                <br />
+                <canvas id="upcomming"></canvas>
+                <br />
+                <span id="score">score</span>
+                <br />
+                <canvas id="buttons" width="80" height="260" style="border: 0"></canvas>
+            </div>
+            <script>
+                setupPanel("mycanvas", "upcomming");
+            </script>
         </div>
-        <div class="ddiv" style="padding-left:25px;">
-          <span>Up Next</span>
-          <br />
-          <canvas id="upcomming"></canvas>
-          <br />
-          <span id="score">score</span>
-          <br />
-          <canvas
-            id="buttons"
-            width="80"
-            height="260"
-            style="border: 0"
-          ></canvas>
-        </div>
-        <script>
-          setupPanel("mycanvas", "upcomming");
-        </script>
-      </div>
     </div>
     <div class="center-content">
-      <p>
-        This is really a simple game to build, and was my first real jump into
-        Javascript to try to get to learn the language and HTML Canvas at the
-        same time. this early version is still pretty crude, but it shows off
-        using bit operation to generate all the shapes so they can be stored as
-        simple integers.
-      </p>
-      <pre style=" background-color:rgb(58, 58, 58);">
-            <code style="font-size: small;">
+        <p>
+            This is really a simple game to build, and was my first real jump into
+            Javascript to try to get to learn the language and HTML Canvas at the
+            same time. this early version is still pretty crude, but it shows off
+            using bit operation to generate all the shapes so they can be stored as
+            simple integers.
+        </p>
+        <pre>
+            <code >
             const LAYOUTS = [
                 [51],                   //square
                 [240, 8738],            //line
@@ -64,29 +58,37 @@
             ];
         </code>
       </pre>
-      <p>
-        You can try out the number generator here and draw your own shapes:
-        <div width="400" class="ddiv" style="left:400"> 
-            <canvas id="myquad"></canvas><br/>
-           
-            <input style="width:50px" type="text" id="lblval" value="0"></input> 
-            <button onclick="setvalue()">set</button>   
-             <button onclick="clearquad()">clear</button>
-            <script>
-                setupQuad('myquad');
-            </script>
-        </div>
-        Every tile has a bit equivelent, starting with top row with bits: 0 to 3 and the 
-        second row 4 to 7, third 8 to 11, and finally the forth row 12 to 15. when the bit is 
-        turned on that value is 'or'ed with any other squares to get a final value.
-      </p>
-      <p>
-          The game is broken up into 10 squares wide by 20 squares high; each square at 10 pixels 
-          in height and width. when the timer advances a tick; the game will take the current
-          shape of 4 tiles and advance one down while checking for collisions. if there is a collision 
-          it stops the shape, copies the 'on' tiles to the back buffer and then checks for completed
-          row
-      </p>
+        <p>
+            You can try out the number generator here and draw your own shapes:
+            <div width="400" class="ddiv" style="left:400">
+                <canvas class="testbrix-inline" id="myquad"></canvas>
+                <div class="testbrix-inline">
+                    <button class="testbrix" onclick="clearquad()">clear</button><br />
+                    <input class="testbrix" type="text" id="lblval" value="0"></input><br />
+                    <button class="testbrix" onclick="setvalue()">set</button><br />
+                </div>
+
+                <script>
+                    setupQuad('myquad');
+                </script>
+            </div>
+            Every tile has a bit equivelent, starting with top row with bits: 0 to 3 and the
+            second row 4 to 7, third 8 to 11, and finally the forth row 12 to 15. when the bit is
+            turned on that value is 'or'ed with any other squares to get a final value.
+        </p>
+        <p>
+            The game is broken up into 10 squares wide by 20 squares high; each square at 10 pixels
+            in height and width. when the timer advances a tick; the game will take the current
+            shape of 4 tiles and advance one down while checking for collisions. if there is a collision
+            it stops the shape, copies the 'on' tiles to the back buffer and then checks for completed
+            row.
+        </p>
+        <p>
+            Feel free to dig through the Tetris.js, but I have to give warning, it was my first real try
+            at Javascript, so it's a little mesy and not horibaly effeciant. When I get time, I'll take
+            another stab at it.
+        </p>
     </div>
-  </body>
+</body>
+
 </html>

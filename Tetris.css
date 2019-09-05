@@ -47,3 +47,20 @@ img {
     padding: 32px;
     border: 1px solid rgb(88, 88, 88);
   }
+
+  .testbrix{
+    width:100px;
+    margin:2px;
+  }
+
+  .testbrix-inline{
+    display: inline-block; 
+    vertical-align:middle;
+  }
+
+  pre{
+    background-color:rgb(58, 58, 58);
+  }
+  code{
+    font-size: small;
+  }

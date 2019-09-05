@@ -1,0 +1,131 @@
+<html>
+
+<head>
+    <title>About</title>
+    <meta charset="utf-8" />
+    <link href="source/favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="source/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="index.css?v=0" rel="stylesheet" />
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div id="toolbar"></div>
+    <script>
+        GenBar();
+    </script>
+    <div class="left-content">
+        <p>
+            I grew up a Radio Shack nerd, always tearing old radios and TV's appart
+            where ever I could find them for parts, but this was ballaned out with 
+            rebuilding dirt bikes and later on old cars. When I hit middle school, I 
+            became enamered with the Apple IIe lab. Oh sure, I played Oregan Trail in 
+            grade shool, but It didn't click till I found the prgramming Basic pamflet 
+            stuffed in the back of a cubboard, it opened a whole new world and got me sent
+            to the princibles office after the whole computer lab was flashing: "Keyboard 
+            class is dull" (okay that was not the actuall wordage).
+        </p>
+        <p>
+            Software development continued thrugh highschool, where my wonderfull counceler
+            got me convinced that software development did not have a future, so I moved on
+            to autobody, got married, started having kids and then the body shop shut down
+            leaving me out of work. Wahoo, I'm poor with a kid on the way; (mostly) free ride to 
+            college for retraining, yay!
+        </p>
+        <p>
+            That year got my first hand me down 486 compaq desktop computer with 16mb of RAM (wow) 
+            when starting Yakima Valley Community College. I instantly glommed onto software
+            development in my general CS degree. In my first year I was doing work study in the
+            IT department. I was headded up by Peggy Keller, who ultimately got me my start 
+            in software development. 
+        </p>
+        <P>
+            The college had an issue with student tracking in the computer labs; it was all
+            done on paper with no real way to figure out actual usage. Peggy allowed me to
+            dig up a surplused 486 laptop out of the basement and load it up with Visual Basic 4?
+            maybe 5? I built something in a few weeks and the college was happy with it and
+            got my first check for the sale of the program. I found my nitche.
+        </P>
+        <p>
+            At the sametime Douglas Nielson one of my programming teachers, did work on the side
+            for an industrial refergeration control company: Doubl-Kold, but they ran into an
+            issue where they were 3 months behind schedule, and Douglas couldn't help, so 
+            he sent me over. Doubl-Kold showed me the issues they were having in making a 
+            hybred Windows HMI with a DOS control computer. I had them caught up in around 
+            three hours and got hired on the spot. Needless to say, I meant to finsh my degree, 
+            but the work schedule never permitted it.   
+        </p>
+        <p>
+            I was at Doubl-Kold for nearly 18 years, and except for the first few years; basically the 
+            only developer. Unfortunatly due to NDA I can not show anything about this software That
+            was built and maintained over the course of my stay. But I can describe some details about it:
+            <br/>
+            When I first started the prevous developer had been building everything in DOS, and had 
+            a very static C program, this resulted in 131 different versions of almost the same program. This software
+            was responsible for talking to remote IO over RS422 serial communications and regulating
+            the CA rooms temperature and atmosphere along with numerus other functions. The unfortuant part
+            was each apple warehouse is slightly different in how it's controlled, causing mulpitle varations
+            of the same code.
+            <br/>
+            When I was able to take a crack at it, my first mission was to bump it into DotNet, and use
+            and XML file to dynamically change how each facility would operate. Honistly the ins and outs
+            for this design could take up pages, and I may someday devote a special page on this site
+            for control design, but not here. The program revolved around reading in an XML file on load
+            to get information on IO and control configuraiton for a single facility. This was helped 
+            by a little program that allowed someone trained on it to assemble a facility in just a couple
+            hours, insted of weeks. All this allowed me to only need to support one verion of the software,
+            and give a clear path for upgradding facilitys along the way to keep them with the latest 
+            version. The only difference between a Zirkle Fruit facility and a Stemilt facility was a 
+            single XML file, that stayed fairly static over the course of upgrades.
+            <br/>
+            The other big component was the HMI that allowed an end user to customize how the program
+            looked and what data was shown on what screen and did they want a data tag to look like text 
+            or a gauge or maybe a reader board. I learned long ago you can't make everyone happy with UI
+            layout, but if users are given the power to manipulate what it looks like, you get a much
+            happier base. I've also determined that the simplier the interface, the less it scares of potental 
+            users from exploring.
+        </p>
+        <p>
+            Sadly near the end of my stay, I found the work way too repeatitive, as there was nothing new the 
+            base software couldn't take on. I also felt stagnated, as the job wasn't pushing me to grow as 
+            a developer. I spent six months documenting every aspect of my duties and all the tooling
+            built over the years. Since the software didn't require changes for Doubl-Kold to continue selling
+            and installing new facilities, I felt that I left them in a good position, and would allow them
+            time to find a new developer.
+        </p>
+        <p>
+            I moved on to Van Doren Sales that buils Fruit Pack house equipment (I know, still sort of the
+            same industry, and many of the same people). It was a bit of a shock to the system that I needed
+            I quickly added a bunch of new skills needed for the job: Web development, Android Applications, 
+            Linux with Java application, some embedded Ada, Rest services, Document based Databases like MongoDB,
+            and a push to use WPF (I still don't like, but it'sale what the shop uses so...)
+            <br/>
+            This is also another situation that NDA's come into play. But one of the most noticable system
+            features is our display system that uses a central web server like IIS running an ASP.net to
+            deliver constant updated dashboards through out the packlines. What's really cool about it, is using
+            those cheep $35 Raspberry Pi computers as a source to dish the webpages to the TV stations. This setup
+            makes it very inexpensive to implemt a large collection of what ammounts to kisoks. 
+            <br/>
+            Something I was excided to implemnt were Raspberry Pi/Linux based interactive stations that workers could use
+            to send print commands to the server, and get basic information about what they were packing.
+        </p>
+        <p>
+            I've not slacked off on my personal projects. I try to keep them completly seperate from work, this 
+            sometimes tend to be difficult as there are lots of crossover in what I enjoy working on, but checkout
+            my personal projects page. Since this site is likely to be under constant development, I'll post new content
+            whenever possible.
+        </p>
+        <p>
+            TLDR: likes to tinker
+        </p>
+        <p style="color:gray">
+            Have you click on the Tetris block yet?
+        </p>
+
+        
+    </div>
+
+
+</body>
+
+</html>
